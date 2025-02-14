@@ -1,0 +1,88 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ff0f13;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#FAD7DF;
+    z-index: 10;
+}
+
+.botones{
+    padding: 9px;
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+.botones a{
+    background-color: transparent;
+    border: 2px solid #ff0f13;
+    padding: 9px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-boder-radius: 80px;
+}
+
+
+.greetings{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.greetings > span {
+    animation: glow 1.8s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100%{
+        color: #FF3234;
+        text-shadow: 0 0 12px #FF3234, 0 0 50px #FF3234, 0 0 100px #FF3234;
+    }
+    10%, 90%{
+        color: #FF3234;
+        text-shadow: none;
+    }
+}
+
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+
+.greetings > span:nth-child(4){
+    animation-delay: .4s ;
+}
+
+.greetings > span:nth-child(6){
+    animation-delay: .6s ;
+}
+
+.greetings > span:nth-child(8){
+    animation-delay: .8s ;
+}
+
+.greetings > span:nth-child(6){
+    animation-delay: .1s ;
+}
+
+.description {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
